@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Password Generator</h1>
+      </div>
+
+      <div class="field">
+        <label class="label">Enter Length</label>
+        <input #length
+          type="text"
+          name="length"
+          #len
+          class="input"
+          placeholder="Enter Length"
+          (input)="onChangeLength(len.value)"
+        />
+      
+      </div>
+      <div class="field">
+        <input
+          type="checkbox"
+          name="alpha"
+          class="checkbox"
+          (change)="onChangeUseLetters()"
+        /><span class="span">Use Alphabates</span>
+      </div>
+      <div class="field">
+        <input
+          type="checkbox"
+          name="num"
+          class="checkbox"
+          (change)="onChangeUseNumbers()"
+        /><span class="span">Use Numbers</span>
+      </div>
+      <div class="field">
+        <input
+          type="checkbox"
+          name="sym"
+          class="checkbox"
+          (change)="onChangeUseSymbols()"
+        /><span class="span">Use Symbols</span>
+      </div>
+      <div class="field">
+        <button [disabled]="!length &&(includeLetters||includeNumbers||includeSymbols)" class="button" (click)="onButtonClick()">
+          Generate Password
+        </button>
+
+        <div class="field">
+          <label class="label">Genrated Password</label>
+          <input
+            type="text"
+            name="pass"
+            class="input"
+            placeholder="Your Password"
+            [value]="password"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

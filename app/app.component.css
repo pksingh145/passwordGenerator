@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+
+.title{
+	font-size:23px;
+	font-weight: bold;
+	margin-bottom: 2rem;
+/*	text-align: center;*/
+	font-family: 'Lumanosimo', cursive;
+}
+
+
+.container{
+	width: 600px;
+/*	border: 2px solid red;*/
+	display: block;
+	align-items: center;
+	margin: auto;
+	margin-top: 5rem;
+
+}
+
+.field{
+	margin-bottom: 1rem;
+}
+
+.label{
+	display: block;
+	font-size: 16px;
+	font-family: 'Nunito Sans', sans-serif;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	font-weight: bold;
+}
+.input{
+	width: 80%;
+	padding: 0.8rem 0.2rem 0.2rem 1rem;
+	font-size: 18px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.span{
+	margin-left: 1rem;
+	font-size: 16px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.checkbox{
+	padding: 1rem 2rem;
+	border-color: grey;
+	
+	color: green;
+	margin:0;
+}
+
+.button{
+	font-size: 1.125em;
+	padding: 0.5rem 1rem 0.5rem 1.2rem;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: 'Nunito Sans', sans-serif;
+	background: green;
+	color: white;
+	transform: translate(10px, 10%);
+	margin-bottom: 1.2rem;
+	margin-top: 1rem;
+	text-align: center;
+    white-space: nowrap;
+    line-height: 1.5;
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+}
+.button:hover{
+	background-color: #00d1a1;
+	
+}
